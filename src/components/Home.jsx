@@ -1,84 +1,97 @@
-import React, { Component } from 'react';
-import { Carousel } from 'react-bootstrap';
-import '../CSS_Files/font.css'
+//import styles from './CarouselDisplay';
+//import styles2 from './OverlayingImages';
+import CarouselDisplay from "./CarouselDisplay";
+import { useMediaQuery } from "react-responsive";
+import '../CSS_Files/logogradient.css';
+import { AnimatedGradient } from "./AnimatedGradient";
+import OverlappingImages from './OverlayingImages';
+import Testimonials from "./Testimonials";
 
-const styles = {
-    container: {
-        position: 'absolute',
-        top: '40%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-  
-    },
-
-    CaptionStyle: {
-        fontfamily:'Sacramento, serif'
+export default function Home () {
 
 
-    }
-}
+    const isDesktop = useMediaQuery({ minWidth: 992 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
 
-class SplitText extends Component {
-  render(){
-    return(
-      <span aria-label={this.props.copy} role={this.props.role}>
-          {this.props.copy.split("").map(function(char, index){
-            let style = {"animation-delay": (0.5 + index / 10) + "s"}
-            return <span
-              aria-hidden="true"
-              key={index}
-              style={style}>
-              {char}
-            </span>;
-          })}
-        </span>
-    );
-  }
-}
-
-var listOfImages =[];
-
-class Home extends React.Component{
-    importAll(r) {
-        return r.keys().map(r);
-    };
-    componentWillMount() {
-        listOfImages = this.importAll(require.context('../SMBP Test', false, /\.(png|jpe?g|svg)$/));
-    }
-    render(){
-        return( 
-            <>
-                <Carousel>
-                    <Carousel.Item interval={5000}>
-                        <img
-                            className="d-block w-100 h-auto"
-                            src={listOfImages[0]}
-                            alt="First slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item interval={5000}>
-                        <img
-                            className="d-block w-100 h-auto"
-                            src={listOfImages[1]}
-                            alt="First slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item interval={5000}>
-                        <img
-                            className="d-block w-100 h-auto"
-                            src={listOfImages[2]}
-                            alt="First slide"
-                        />
-                    </Carousel.Item>
-                </Carousel>
+        return(
+            <> 
                 <div>
-                    <Carousel.Caption className='container' style={styles.container}>
-                        <h1><SplitText copy="Soul Meets Body Photography" role="heading" /></h1>
-                    </Carousel.Caption>
+                    <CarouselDisplay/>
                 </div>
-            </>
-        )
-    }
+                {isDesktop &&
+                    <div className="DesktopHomeContainer">
+                            <div className="DesktopSticky">
+                                <div className='DesktopGradient'>
+                                    <div>
+                                        {AnimatedGradient}
+                                    </div>
+                                    <div className="DesktopLogoTextBox">
+                                        <p className="DesktopLogoText">~ Soul Meets Body Photography ~</p>
+                                    </div>
+                                </div>
+                            </div>               
+                        <div>
+                            <OverlappingImages/> 
+                        </div>
+                        <div>
+                            <Testimonials/>
+                        </div>
+                    </div>
+                }
+
+                {isTablet &&
+                    <div className="TabletHomeContainer">
+                            <div className="TabletSticky">
+                                <div className='TabletGradient'>
+                                    <div>
+                                        {AnimatedGradient}
+                                    </div>
+                                    <div className="TabletLogoTextBox">
+                                        <p className="TabletLogoText">Tablet Screen!</p>
+                                    </div>
+                                </div>
+                            </div>               
+                        <div>
+                            <OverlappingImages/> 
+                        </div>
+                        <div>
+                            <Testimonials/>
+                        </div>
+                    </div>
+                }
+
+            {isMobile &&   
+                <div className="MobileHomeContainer">
+                        <div className="MobileSticky">
+                            <div className='MobileGradient'>
+                                <div>
+                                    {AnimatedGradient}
+                                </div>
+                                <div className="MobileLogoTextBox">
+                                    <p className="MobileLogoText">Soul Meets Body Photography</p>
+                                </div>
+                            </div>
+                        </div>               
+                    <div>
+                        <OverlappingImages/> 
+                    </div>
+                    <div>
+                        <Testimonials/>
+                    </div>
+                </div>
+            }
+        </>
+    )
 }
 
-export default Home;
+
+
+
+
+
+
+    
+
+
+    

@@ -1,5 +1,4 @@
-
-.sticky{
+.DesktopSticky{
     position: absolute;
     position:sticky;
     top:0;
@@ -7,7 +6,7 @@
     z-index: 1;
 }
 
-.gradient {
+.DesktopGradient {
     height: 20vh;
     width: 100%;
     color: #fff;
@@ -17,7 +16,53 @@
     -moz-animation: Gradient 10s ease infinite;
     animation: Gradient 10s ease infinite;
     position: absolute;
-    }
+}
+  
+.DesktopLogoText {
+    font-size: 4.5vw;
+    text-align: center;
+    position: relative;
+    font-family: "Sacramento", sans-serif;
+}
+  
+.DesktopLogoTextBox {
+    margin-top: 40px;
+}
+
+.MobileHomeContainer {
+  height: 20px;
+}
+
+.MobileSticky{
+  position: absolute;
+  position:sticky;
+  top:0;
+  bottom:auto;
+  z-index: 1;
+}
+
+.MobileGradient {
+  height: 12vh;
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(-45deg, #F0EFEA, #a59c4e, #6ea8bd, #da9269);
+  background-size: 300% 300%;
+  -webkit-animation: Gradient 10s ease infinite;
+  -moz-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
+  position: absolute;
+}
+
+.MobileLogoText {
+  font-size: 7vw;
+  text-align: center;
+  position: relative;
+  font-family: "Sacramento", sans-serif;
+}
+
+.MobileLogoTextBox {
+  margin-top: 40px;
+}
   
   .paused {
     -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
@@ -58,17 +103,6 @@
   100% {
   background-position: 0% 50%
   }
-  }
-
-  .logoText {
-    font-size: 4.5vw;
-    text-align: center;
-    position: relative;
-    font-family: "Sacramento", sans-serif;
-  }
-
-  .logoTextBox {
-    margin-top: 40px;
   }
 
   .HomeScroll{

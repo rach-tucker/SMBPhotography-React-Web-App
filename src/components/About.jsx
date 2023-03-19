@@ -1,9 +1,22 @@
 import '../CSS_Files/body.css';
+import { useMediaQuery } from 'react-responsive';
 
-export default function About() {
+const About = () => {
+
+    const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+    })
+
     return (
-        <>
-            <h3 className='body text-center'>This is the About me Page!</h3>
-        </>
+        <div>
+            {isDesktopOrLaptop &&
+                <>
+                    <p>You are a desktop or laptop</p>
+                    <h5>The One Behind The Camera</h5>
+                </>
+             }
+        </div>
     )
 }
+
+export default About;

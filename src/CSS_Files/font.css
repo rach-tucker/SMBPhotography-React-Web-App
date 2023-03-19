@@ -4,8 +4,30 @@
   }
   
   body {
-    font-family: "Helvetica Neue", "Helvetica", sans-serif;
     background-color: #F0EFEA;
+  }
+  
+
+  h3{
+    font-size: 6.5vw;
+    font-family: "Sacramento", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #756c43;
+    position: relative;
+    top: 50px;
+    
+  }
+
+
+  h2 {
+    font-size: 4.5vw;
+    position: absolute;
+    font-family:"Edu NSW ACT Foundation", serif;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 800px;
+    color:rgb(56, 56, 56)
   }
   
   h1 {
@@ -14,7 +36,9 @@
     text-align: center;
     font-weight: 600;
     color: #353239;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom:50px;
+    
   }
   
   h1 span span {

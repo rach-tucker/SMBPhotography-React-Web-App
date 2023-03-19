@@ -4,18 +4,20 @@ import Home from './components/Home';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
-import './CSS_Files/font.css'
+import './CSS_Files/font.css';
 
 
-function App() {
+const App = () => {
+
+
     return (
-        <div className="App">
+        <div className="App">     
             <Navigation/>
             <Routes>
-                <Route exact path='/' element={<Home />}/>
-                <Route path='/about' element={<About />}/>  
-                <Route path='/gallery' element={<Gallery />}/>               
-                <Route path='/contact' element={<Contact/>}/>  
+                <Route exact path='/' element={ <Home /> }/>
+                <Route path='/about' element={ <About /> }/>  
+                <Route path='/gallery' element={ <Gallery /> }/>               
+                <Route path='/contact' element={ <Contact /> }/>  
             </Routes>
         </div>
     );

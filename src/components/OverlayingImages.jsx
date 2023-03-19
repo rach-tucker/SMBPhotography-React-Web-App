@@ -5,9 +5,9 @@ const styles2 = {
     parent: {
         position: 'relative',
         top: '300px',
-        left: '70px',
     },
     image1: {
+        maxwidth:'50%',
         width: '500px',
         position: 'absolute',
         top: '0px',
@@ -16,6 +16,7 @@ const styles2 = {
         
     },
     image2: {
+        maxwidth:'100%',
         width:'450px',
         position: 'relative',
         top: '75px',

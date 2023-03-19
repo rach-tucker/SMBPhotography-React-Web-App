@@ -5,7 +5,7 @@ import { ReactComponent as Brand } from '../icons/logo.svg';
 const Navigation = () => {
     return (
         <>
-            <Navbar collapseOnSelect fixed='top' expand='sm' bg='light' variant='light'>
+            <Navbar collapseOnSelect expand='sm' bg='light' variant='light'>
                 <Container>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='responsive-navbar-nav'>
