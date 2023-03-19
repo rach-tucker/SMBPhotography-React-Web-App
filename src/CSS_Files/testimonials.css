@@ -1,0 +1,21 @@
+.imagesParent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 550px;
+    margin-bottom: 500px;
+    padding: 25px;
+   }
+   
+   .image {
+    max-width: 75%;
+    float: left;
+    clip-path: circle();
+   }
+   
+   .text {
+    font-size: 20px;
+    padding-top: 5%; 
+    float: left;
+   }
+
