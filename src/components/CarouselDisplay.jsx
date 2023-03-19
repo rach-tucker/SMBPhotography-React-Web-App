@@ -7,7 +7,7 @@ import SplitText from './WelcomeMessage';
 const styles = {
     container: {
         position: 'absolute',
-        top: '40%',
+        top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
   
@@ -29,6 +29,7 @@ class CarouselDisplay extends React.Component{
     componentWillMount() {
         listOfImages = this.importAll(require.context('../SMBP Test', false, /\.(png|jpe?g|svg)$/));
     }
+    
     render(){
         return( 
             <>
