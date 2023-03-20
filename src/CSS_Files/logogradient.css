@@ -29,9 +29,7 @@
     margin-top: 40px;
 }
 
-.MobileHomeContainer {
-  height: 20px;
-}
+
 
 .MobileSticky{
   position: absolute;
@@ -61,7 +59,7 @@
 }
 
 .MobileLogoTextBox {
-  margin-top: 40px;
+  margin-top: 25px;
 }
   
   .paused {

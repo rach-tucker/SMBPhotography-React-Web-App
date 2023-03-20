@@ -1,21 +1,51 @@
-.imagesParent {
+.DesktopImagesParent {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 550px;
     margin-bottom: 500px;
     padding: 25px;
-   }
+}
    
-   .image {
+.DesktopTestImage {
     max-width: 75%;
     float: left;
     clip-path: circle();
-   }
+}
    
-   .text {
-    font-size: 20px;
-    padding-top: 5%; 
-    float: left;
-   }
+
+.MobileImagesParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 225px;
+    margin-bottom: 500px;
+    padding: 25px;
+    background-image: url("../Images/feathers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.MobileTestImage {
+    max-width: 100%;
+    clip-path: circle();
+    position: center;
+    margin-bottom: 20px;
+    
+}
+
+.MobileTestText {
+    font-size: 14px;
+    padding: 15px;
+    margin-top: 10px;
+    
+}
+
+
+   
+
+
 

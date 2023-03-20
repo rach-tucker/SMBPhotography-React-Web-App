@@ -23,8 +23,8 @@ const DesktopStyles = {
         bottom:'50px',
         left: '150px',
         
-    }
-} 
+    },
+}
 
 
 var overlapImagesList =[];
@@ -41,7 +41,7 @@ class OverlappingImages extends React.Component{
             <>
     
             <div className="parent" style={DesktopStyles.parent}>
-                <h2 className='DesktopQuote1'>"I capture fleeting moments, <br></br>so they last a lifetime"</h2>
+                <h2 className='Quote1'>"I capture fleeting moments, <br></br>so they last a lifetime"</h2>
                 <img className="image1" src={overlapImagesList[0]} style={DesktopStyles.image1} alt="bottomimg" />
                 <img className="image2" src={overlapImagesList[1]} style={DesktopStyles.image2} alt="topimg" />
             </div>
@@ -52,4 +52,3 @@ class OverlappingImages extends React.Component{
 }
 
 export default OverlappingImages;
-    

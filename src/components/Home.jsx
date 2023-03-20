@@ -5,6 +5,8 @@ import { useMediaQuery } from "react-responsive";
 import '../CSS_Files/logogradient.css';
 import { AnimatedGradient } from "./AnimatedGradient";
 import OverlappingImages from './OverlayingImages';
+import TabletOverlappingImages from './TabletOverlayingImages';
+import MobileOverlappingImages from "./MobileOverlayingImages";
 import Testimonials from "./Testimonials";
 
 export default function Home () {
@@ -53,7 +55,7 @@ export default function Home () {
                                 </div>
                             </div>               
                         <div>
-                            <OverlappingImages/> 
+                            <TabletOverlappingImages/> 
                         </div>
                         <div>
                             <Testimonials/>
@@ -74,7 +76,7 @@ export default function Home () {
                             </div>
                         </div>               
                     <div>
-                        <OverlappingImages/> 
+                        <MobileOverlappingImages/> 
                     </div>
                     <div>
                         <Testimonials/>

@@ -19,16 +19,13 @@
     
   }
 
-
-  h2 {
-    font-size: 4.5vw;
-    position: absolute;
-    font-family:"Edu NSW ACT Foundation", serif;
-    text-align: center;
-    margin-top: 200px;
-    margin-left: 800px;
-    color:rgb(56, 56, 56)
+  h2{
+    font-family: "Waterfall", sans-serif;
+    font-size: 12vw;
   }
+
+
+  
   
   h1 {
     font-size: 6.5vw;
@@ -42,13 +39,33 @@
   }
   
   h1 span span {
-      color: white;
-      position: relative;
-      margin-top: 3rem;
-      opacity: 0;
-      animation: move-text 0.75s forwards;
+    color: white;
+    position: relative;
+    margin-top: 3rem;
+    opacity: 0;
+    animation: move-text 0.75s forwards;
   }
   
+  .DesktopQuote1 {
+    font-size: 4.5vw;
+    position: absolute;
+    font-family:"Edu NSW ACT Foundation", serif;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 800px;
+    color:rgb(56, 56, 56)
+  }
+
+  .MobileQuote1 {
+      font-size: 4.5vw;
+      position: absolute;
+      font-family:"Edu NSW ACT Foundation", serif;
+      text-align: center;
+      margin-top: 40px;
+      margin-left: 260px;
+      color:rgb(56, 56, 56)
+    }
+    
   @keyframes move-text {
       0% {
           bottom: -0.2em;
@@ -64,5 +81,7 @@
           opacity: 1;
       }
   }
+
+
   
   
