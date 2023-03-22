@@ -7,8 +7,13 @@
     background-color: #fbf2e1;
   }
 
-.hearts{
+.mobilehearts{
   font-size: 6vh;
+  color:#ac7163;
+}
+
+.desktophearts {
+  font-size: 16vh;
   color:#ac7163;
 }
 
@@ -92,7 +97,7 @@ h2 {
     text-align: center;
     margin-top: 200px;
     margin-left: 900px;
-    color:rgb(56, 56, 56)
+    color:#748b0a;
   }
 
   .MobileQuote1 {

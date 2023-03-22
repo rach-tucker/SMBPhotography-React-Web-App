@@ -23,6 +23,10 @@ const DesktopStyles = {
         bottom:'50px',
         left: '350px',
         
+    },
+    desktophearts: {
+        position:'absolute',
+        top:'600px'
     }
 } 
 
@@ -44,6 +48,9 @@ class OverlappingImages extends React.Component{
                 <h2 className='DesktopQuote1'>"I capture fleeting moments, <br></br>so they last a lifetime"</h2>
                 <img className="image1" src={overlapImagesList[0]} style={DesktopStyles.image1} alt="bottomimg" />
                 <img className="image2" src={overlapImagesList[1]} style={DesktopStyles.image2} alt="topimg" />
+                <div className='desktophearts' style={DesktopStyles.desktophearts}>
+                    <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                </div>
             </div>
             
             </>
