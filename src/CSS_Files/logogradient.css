@@ -10,7 +10,7 @@
     height: 20vh;
     width: 100%;
     color: #fff;
-    background: linear-gradient(-45deg, #F0EFEA, #a59c4e, #6ea8bd, #da9269);
+    background: linear-gradient(-45deg, #ac7163, #b8a79f, #e2c09d, #a37e76);
     background-size: 300% 300%;
     -webkit-animation: Gradient 10s ease infinite;
     -moz-animation: Gradient 10s ease infinite;
@@ -22,11 +22,11 @@
     font-size: 4.5vw;
     text-align: center;
     position: relative;
-    font-family: "Sacramento", sans-serif;
+    font-family: "Poiret One", sans-serif;
 }
   
 .DesktopLogoTextBox {
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 
@@ -43,7 +43,7 @@
   height: 12vh;
   width: 100%;
   color: #fff;
-  background: linear-gradient(-45deg, #F0EFEA, #a59c4e, #6ea8bd, #da9269);
+  background: linear-gradient(-45deg, #ac7163, #b8a79f, #e2c09d, #a37e76);
   background-size: 300% 300%;
   -webkit-animation: Gradient 10s ease infinite;
   -moz-animation: Gradient 10s ease infinite;
@@ -55,11 +55,11 @@
   font-size: 7vw;
   text-align: center;
   position: relative;
-  font-family: "Sacramento", sans-serif;
+  font-family: "Poiret One", sans-serif;
 }
 
 .MobileLogoTextBox {
-  margin-top: 25px;
+  margin-top: 20px;
 }
   
   .paused {

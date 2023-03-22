@@ -4,7 +4,27 @@
   }
   
   body {
-    background-color: #F0EFEA;
+    background-color: #fbf2e1;
+  }
+
+.hearts{
+  font-size: 6vh;
+  color:#ac7163;
+}
+
+
+
+h2 {
+  font-size: 7vh;
+  font-family:"Nanum Pen Script", sans-serif;
+}
+
+
+  @media (max-width: 767px){
+    h2 {
+      font-size: 3.5vh;
+      font-family:"Nanum Pen Script", sans-serif;      
+    }
   }
   
 
@@ -19,51 +39,71 @@
     
   }
 
-  h2{
-    font-family: "Waterfall", sans-serif;
-    font-size: 12vw;
-  }
 
 
   
   
   h1 {
-    font-size: 6.5vw;
-    font-family: "Sacramento", sans-serif;
+    font-size: 6vw;
+    font-family: "Poiret One", sans-serif;
     text-align: center;
-    font-weight: 600;
+    line-height: 80%;
+    font-weight: 200;
     color: #353239;
-    margin-top: 3rem;
-    margin-bottom:50px;
     
   }
   
   h1 span span {
     color: white;
     position: relative;
-    margin-top: 3rem;
     opacity: 0;
     animation: move-text 0.75s forwards;
   }
+
+@media (max-width: 767px){
+  .carousel-caption{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: absolute;
+    padding-bottom: 6rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px){
+    .carousel-caption{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: absolute;
+    padding-bottom: 45rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+
   
   .DesktopQuote1 {
-    font-size: 4.5vw;
+    font-size: 4vw;
     position: absolute;
-    font-family:"Edu NSW ACT Foundation", serif;
+    font-family:"Shadows Into Light Two", serif;
     text-align: center;
     margin-top: 200px;
-    margin-left: 800px;
+    margin-left: 900px;
     color:rgb(56, 56, 56)
   }
 
   .MobileQuote1 {
       font-size: 4.5vw;
       position: absolute;
-      font-family:"Edu NSW ACT Foundation", serif;
+      font-family:"Shadows Into Light Two", serif;
       text-align: center;
       margin-top: 40px;
       margin-left: 260px;
-      color:rgb(56, 56, 56)
+      margin-right: 20px;
+      color:#748b0a;
     }
     
   @keyframes move-text {

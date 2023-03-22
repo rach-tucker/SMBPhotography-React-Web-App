@@ -11,7 +11,7 @@ const DesktopStyles = {
         width: '500px',
         position: 'absolute',
         top: '0px',
-        left: '30px',
+        left: '200px',
         
         
     },
@@ -21,7 +21,7 @@ const DesktopStyles = {
         position: 'relative',
         top: '75px',
         bottom:'50px',
-        left: '150px',
+        left: '350px',
         
     }
 } 

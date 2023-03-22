@@ -19,8 +19,12 @@ const MobileStyles = {
         position: 'relative',
         top: '25px',
         left: '90px',
-        
+    },
+    hearts: {
+        position:'absolute',
+        top:'230px'
     }
+
 }
 
 
@@ -39,8 +43,12 @@ class MobileOverlappingImages extends React.Component{
     
             <div className="parent" style={MobileStyles.parent}>
                 <h2 className='MobileQuote1'>"I capture <br></br> fleeting moments, <br></br>so they last<br></br> a lifetime"</h2>
-                <img className="image1" src={overlapImagesList[0]} style={MobileStyles.image1} alt="bottomimg" />
-                <img className="image2" src={overlapImagesList[1]} style={MobileStyles.image2} alt="topimg" />
+                <img className="image1" src={overlapImagesList[0]} style={MobileStyles.image1} alt="bottomimg1" />
+                <img className="image2" src={overlapImagesList[1]} style={MobileStyles.image2} alt="topimg1" />
+                <div className='hearts' style={MobileStyles.hearts}>
+                    <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                </div>
+                
             </div>
             
             </>

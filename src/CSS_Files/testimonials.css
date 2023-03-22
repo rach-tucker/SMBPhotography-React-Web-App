@@ -3,14 +3,28 @@
     align-items: center;
     justify-content: center;
     margin-top: 550px;
-    margin-bottom: 500px;
+    margin-bottom: 20px;
     padding: 25px;
+    height:900px;
+    background-image: url("../Images/boho-8.jpg");
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
 }
    
 .DesktopTestImage {
     max-width: 75%;
     float: left;
     clip-path: circle();
+}
+
+.DesktopPraiseText {
+    position:absolute;
+    margin-bottom: 700px;
+    font-family: "Waterfall", sans-serif;
+    font-size: 8vw;
+    font-weight: 500;
+    color:#000000;
 }
    
 
@@ -20,10 +34,11 @@
     justify-content: center;
     vertical-align: top;
     text-align: center;
-    margin-top: 225px;
+    margin-top: 275px;
     margin-bottom: 500px;
     padding: 25px;
-    background-image: url("../Images/feathers.jpg");
+    background-image: url("../Images/boho-8.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -38,11 +53,21 @@
 }
 
 .MobileTestText {
-    font-size: 14px;
+    font-size: 16px;
     padding: 15px;
     margin-top: 10px;
+    color: #057a75;
     
 }
+
+
+.MobilePraiseText{
+    font-family: "Waterfall", sans-serif;
+    font-size: 14vw;
+    color:#057a75
+  }
+
+
 
 
    
