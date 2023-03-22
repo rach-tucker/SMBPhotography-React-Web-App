@@ -4,7 +4,8 @@ import '../CSS_Files/font.css'
 const MobileStyles = {
     parent: {
         position: 'relative',
-        top: '135px',
+        top: '175px',
+        
     },
     image1: {
         width: '175px',
@@ -46,7 +47,7 @@ class MobileOverlappingImages extends React.Component{
                 <img className="image1" src={overlapImagesList[0]} style={MobileStyles.image1} alt="bottomimg1" />
                 <img className="image2" src={overlapImagesList[1]} style={MobileStyles.image2} alt="topimg1" />
                 <div className='mobilehearts' style={MobileStyles.mobilehearts}>
-                    <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                    <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
                 </div>
                 
             </div>
