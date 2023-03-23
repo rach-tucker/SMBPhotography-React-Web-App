@@ -31,7 +31,6 @@ const Feed = (props) => {
             post = (
                 <img 
                     width='50%'
-                    margin='2rem'
                     height='auto'
                     id={id} 
                     src={media_url} 

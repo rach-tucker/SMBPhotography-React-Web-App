@@ -23,19 +23,19 @@ class CarouselDisplay extends React.Component{
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         <div className="carousel-caption">
-                            <h2>THIS IS</h2>
                             <h1><SplitText copy="Soul Meets Body Photography" role="heading" /></h1>
+                            <h1 className='InfoText'>Colorado •Wedding•Portrait•Family Photography</h1>
                         </div>
                     </div>
                     <div className="carousel-inner">
-                        <div className="carousel-item active" data-bs-interval="1000">
+                        <div className="carousel-item active" data-bs-interval="3000">
                             <img src={listOfImages[0]} className="d-block w-100" alt="..."/>
                         </div>
-                        <div className="carousel-item" data-bs-interval="1000">
+                        <div className="carousel-item" data-bs-interval="3000">
                             <img src={listOfImages[1]} className="d-block w-100" alt="..."/>
 
                         </div>
-                        <div className="carousel-item" data-bs-interval="1000">
+                        <div className="carousel-item" data-bs-interval="3000">
                             <img src={listOfImages[2]} className="d-block w-100" alt="..."/>
                         </div>
                     </div>

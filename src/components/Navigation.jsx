@@ -1,11 +1,12 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { ReactComponent as Brand } from '../icons/logo.svg';
+import '../CSS_Files/nav.css'
 
 
 const Navigation = () => {
     return (
         <>
-            <Navbar collapseOnSelect expand='sm' bg='light' variant='light'>
+            <Navbar className='nav' collapseOnSelect expand='sm'>
                 <Container>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='responsive-navbar-nav'>

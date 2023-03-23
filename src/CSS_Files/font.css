@@ -16,10 +16,13 @@
 .desktophearts {
   font-size: 16vh;
   color:#ac7163;
-  text-align: center;
 }
 
+.InfoText {
+  font-size:1.5vh;
+  color:white
 
+}
 
 h2 {
   font-size: 7vh;
@@ -29,7 +32,8 @@ h2 {
 
   @media (max-width: 767px){
     h2 {
-      font-size: 3.5vh;
+      font-size: 3vh;
+      padding-bottom: 0;
       font-family:"Nanum Pen Script", sans-serif;      
     }
   }
@@ -54,7 +58,7 @@ h2 {
     font-size: 6vw;
     font-family: "Poiret One", sans-serif;
     text-align: center;
-    line-height: 80%;
+    line-height: 90%;
     font-weight: 200;
     color: #353239;
     
@@ -99,7 +103,7 @@ h2 {
     text-align: center;
     margin-top: 200px;
     margin-left: 900px;
-    color:#748b0a;
+    color:#057a75;
   }
 
   .MobileQuote1 {
@@ -110,7 +114,7 @@ h2 {
       margin-top: 40px;
       margin-left: 260px;
       margin-right: 20px;
-      color:#748b0a;
+      color:#057a75;
     }
     
   @keyframes move-text {
