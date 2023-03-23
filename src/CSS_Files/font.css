@@ -10,11 +10,13 @@
 .mobilehearts{
   font-size: 6vh;
   color:#ac7163;
+  text-align: center;
 }
 
 .desktophearts {
   font-size: 16vh;
   color:#ac7163;
+  text-align: center;
 }
 
 

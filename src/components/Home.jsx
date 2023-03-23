@@ -8,6 +8,7 @@ import OverlappingImages from './OverlayingImages';
 import TabletOverlappingImages from './TabletOverlayingImages';
 import MobileOverlappingImages from "./MobileOverlayingImages";
 import Testimonials from "./Testimonials";
+import InstaDisplay from "./InstaDisplay";
 
 export default function Home () {
 
@@ -38,6 +39,9 @@ export default function Home () {
                         </div>
                         <div>
                             <Testimonials/>
+                        </div>
+                        <div>
+                            <InstaDisplay/>
                         </div>
                     </div>
                 }
