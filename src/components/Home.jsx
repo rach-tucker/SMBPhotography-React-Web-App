@@ -7,6 +7,7 @@ import { AnimatedGradient } from "./AnimatedGradient";
 import OverlappingImages from './OverlayingImages';
 import TabletOverlappingImages from './TabletOverlayingImages';
 import MobileOverlappingImages from "./MobileOverlayingImages";
+import Featured from "./Featured";
 import Testimonials from "./Testimonials";
 import InstaDisplay from "./InstaDisplay";
 
@@ -81,6 +82,9 @@ export default function Home () {
                         </div>               
                     <div>
                         <MobileOverlappingImages/> 
+                    </div>
+                    <div>
+                        <Featured/>
                     </div>
                     <div>
                         <Testimonials/>

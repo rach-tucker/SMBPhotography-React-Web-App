@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../CSS_Files/font.css'
 
 const MobileStyles = {
@@ -8,7 +9,7 @@ const MobileStyles = {
         
     },
     image1: {
-        width: '175px',
+        width: '200px',
         position: 'absolute',
         top: '0px',
         left: '30px',
@@ -16,14 +17,14 @@ const MobileStyles = {
         
     },
     image2: {
-        width:'157px',
+        width:'200px',
         position: 'relative',
-        top: '25px',
-        left: '90px',
+        top: '20px',
+        left: '70px',
     },
     mobilehearts: {
         position:'absolute',
-        top:'230px'
+        top:'565px'
     }
 
 }
@@ -46,9 +47,18 @@ class MobileOverlappingImages extends React.Component{
                 <h2 className='MobileQuote1'>"I capture <br></br> fleeting moments, <br></br>so they last<br></br> a lifetime"</h2>
                 <img className="image1" src={overlapImagesList[0]} style={MobileStyles.image1} alt="bottomimg1" />
                 <img className="image2" src={overlapImagesList[1]} style={MobileStyles.image2} alt="topimg1" />
+                <div className='MobileLocationContainer'>
+                    <h2 className='MobileLocationTitle'>Colorado Photographer</h2>
+                </div>
+                <div>
+                    <p className='MobileLocationText'>Though I wasn't born in Colorado, I consider Colorado my home. Throughout the several years of photographing in this beautiful state, I have found some truly magical spots that I'm excited to take you to!</p>
+                </div>
                 <div className='mobilehearts' style={MobileStyles.mobilehearts}>
                     <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
                 </div>
+                <Link to="/about" className='MobileAboutButtonContainer'>
+                    <button className='MobileAboutButton'>LEARN MORE</button>
+                </Link>
                 
             </div>
             

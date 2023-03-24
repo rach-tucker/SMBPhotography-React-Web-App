@@ -12,10 +12,10 @@ const Navigation = () => {
                     <Navbar.Collapse id='responsive-navbar-nav'>
                         <Nav className="mt-3 m-auto justify-content-between w-100" id='navbar'>
                             <Brand/>
-                            <Nav.Link href='/'>Home</Nav.Link>
-                            <Nav.Link href='/about'>About Me</Nav.Link>
-                            <Nav.Link href='/gallery'>Gallery</Nav.Link>
-                            <Nav.Link href='/contact'>Contact</Nav.Link>
+                            <Nav.Link className='navText' href='/'>Home</Nav.Link>
+                            <Nav.Link className='navText' href='/about'>About Me</Nav.Link>
+                            <Nav.Link className='navText' href='/gallery'>Gallery</Nav.Link>
+                            <Nav.Link className='navText' href='/contact'>Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

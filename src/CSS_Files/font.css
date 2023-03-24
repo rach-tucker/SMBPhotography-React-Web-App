@@ -7,63 +7,6 @@
     background-color: #fbf2e1;
   }
 
-.mobilehearts{
-  font-size: 6vh;
-  color:#ac7163;
-  text-align: center;
-}
-
-.desktophearts {
-  font-size: 16vh;
-  color:#ac7163;
-}
-
-.InfoText {
-  font-size:1.5vh;
-  color:white
-
-}
-
-h2 {
-  font-size: 7vh;
-  font-family:"Nanum Pen Script", sans-serif;
-}
-
-
-  @media (max-width: 767px){
-    h2 {
-      font-size: 3vh;
-      padding-bottom: 0;
-      font-family:"Nanum Pen Script", sans-serif;      
-    }
-  }
-  
-
-  h3{
-    font-size: 6.5vw;
-    font-family: "Sacramento", sans-serif;
-    text-align: center;
-    font-weight: 600;
-    color: #756c43;
-    position: relative;
-    top: 50px;
-    
-  }
-
-
-
-  
-  
-  h1 {
-    font-size: 6vw;
-    font-family: "Poiret One", sans-serif;
-    text-align: center;
-    line-height: 90%;
-    font-weight: 200;
-    color: #353239;
-    
-  }
-  
   h1 span span {
     color: white;
     position: relative;
@@ -71,51 +14,158 @@ h2 {
     animation: move-text 0.75s forwards;
   }
 
+
+@media (min-width: 1200px){
+  h1{
+    font-size: 10vh;
+  }
+}
+
 @media (max-width: 767px){
+  .carousel-caption{
+    font-family: "Poiret One", sans-serif;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: absolute;
+    padding-bottom: 6.5rem;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+  }
+  h1 {
+    font-size: 3.5vh;
+  }
+  P {
+    text-align: center;
+  }
+}
+  
+@media (min-width: 1200px){
   .carousel-caption{
     display: flex;
     flex-flow: column;
     align-items: center;
     position: absolute;
-    padding-bottom: 6rem;
+    padding-bottom: 50rem;
     color: #fff;
     text-align: center;
+    font-family: "Poiret One", sans-serif;
+    line-height: 90%;
+    font-weight: 200;
+    white-space: nowrap;
   }
 }
-
-@media (min-width: 992px){
-    .carousel-caption{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    position: absolute;
-    padding-bottom: 45rem;
-    color: #fff;
-    text-align: center;
-  }
-}
-
   
-  .DesktopQuote1 {
-    font-size: 4vw;
-    position: absolute;
-    font-family:"Shadows Into Light Two", serif;
-    text-align: center;
-    margin-top: 200px;
-    margin-left: 900px;
-    color:#057a75;
+  
+@media (max-width: 767px){
+  .InfoText {
+    font-size:2vh;
+    color:white;
+    white-space: nowrap;       
   }
+}
+    
+@media (min-width: 1200px){
+  .InfoText {
+    font-size:5vh;
+    color:white;
+    white-space: nowrap;       
+  }
+}
+      
+.DesktopQuote1 {
+  font-size: 4vw;
+  position: absolute;
+  font-family:"Shadows Into Light Two", serif;
+  text-align: center;
+  margin-top: 200px;
+  margin-left: 900px;
+  color:#057a75;
+}
+      
+.MobileQuote1 {
+  font-size: 4vw;
+  position: absolute;
+  font-family:"Martel", serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 275px;
+  margin-right: 20px;
+  color:#057a75;
+}
 
-  .MobileQuote1 {
-      font-size: 4.5vw;
-      position: absolute;
-      font-family:"Shadows Into Light Two", serif;
-      text-align: center;
-      margin-top: 40px;
-      margin-left: 260px;
-      margin-right: 20px;
-      color:#057a75;
-    }
+.MobileLocationContainer {
+  padding-top:30px;
+}
+
+.MobileLocationTitle {
+  font-family:"Waterfall", serif;
+  text-align: center;
+  font-size: 7vh;
+}
+
+.MobileLocationText {
+  margin: 5px;
+  font-family:"Martel", serif;
+}
+
+
+
+h2 {
+  padding-top: 20px;
+  font-size: 10vh;
+  font-family: "Montserrat", sans-serif;
+}
+      
+      
+@media (max-width: 767px){
+h2 {
+  font-size: 5.8vh;
+  padding-bottom: 0;
+  margin:.5rem;
+  font-family: "Waterfall", sans-serif;
+       
+  }
+}
+
+.MobileAboutButtonContainer {
+  display: grid;
+  margin: auto;
+  width: 180px;
+  height:60px;
+  padding-top: 1rem;
+}
+
+.MobileAboutButton{
+  font-family:"Martel", serif;
+  font-size: 2vh;
+  color:#fbf2e1;
+  background-color: #ac7163;
+  border: none;
+}
+
+.mobilehearts{
+  font-size: 6vh;
+  color:#ac7163;
+}
+      
+.desktophearts {
+  font-size: 16vh;
+  color:#ac7163;
+}
+
+h3{
+  font-size: 6.5vw;
+  font-family: "Sacramento", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  color: #756c43;
+  position: relative;
+  top: 50px;
+}
+
+
     
   @keyframes move-text {
       0% {

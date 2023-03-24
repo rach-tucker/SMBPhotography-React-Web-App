@@ -3,7 +3,7 @@ import Navigation from "./components/Navigation";
 import Home from './components/Home';
 import About from './components/About';
 import Gallery from './components/Gallery';
-import Contact from './components/Contact';
+import ContactForm from './components/ContactForm';
 import './CSS_Files/font.css';
 
 
@@ -17,7 +17,7 @@ const App = () => {
                 <Route exact path='/' element={ <Home /> }/>
                 <Route path='/about' element={ <About /> }/>  
                 <Route path='/gallery' element={ <Gallery /> }/>               
-                <Route path='/contact' element={ <Contact /> }/>  
+                <Route path='/contact' element={ <ContactForm /> }/>  
             </Routes>
         </div>
     );

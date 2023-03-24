@@ -28,7 +28,7 @@
 }
 
 .DesktopTestText {
-    color:#057a75;
+    color:#3d7003;
 }
    
 
@@ -38,7 +38,7 @@
     justify-content: center;
     vertical-align: top;
     text-align: center;
-    margin-top: 350px;
+    margin-top: 50px;
     margin-bottom: 200px;
     padding: 25px;
     background-image: url("../Images/boho-8.jpg");
@@ -60,15 +60,14 @@
     font-size: 16px;
     padding: 15px;
     margin-top: 10px;
-    color: #057a75;
+    font-family: "Martel", serif;
     
 }
 
 
 .MobilePraiseText{
     font-family: "Waterfall", sans-serif;
-    font-size: 14vw;
-    color:#057a75
+    font-size: 15vw;
   }
 
 
