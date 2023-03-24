@@ -1,0 +1,49 @@
+.MobileFeaturedContainer {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.MobileImgContainer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.MobileFeatImg {
+    width:90%;
+}
+
+.MobileFeaturedTitle {
+    padding-top: 20rem;
+    font-size: 7vh;
+    text-align: center;
+}
+
+.MobileButtonContainer {
+    display: grid;
+    margin: auto;
+    width: 220px;
+    height:60px;
+    padding-top: 1rem;
+}
+
+.MobileFeaturedText {
+    font-family: "Martel", serif;
+}
+
+.MobileContactButton {
+    font-family:"Martel", serif;
+    font-size: 2vh;
+    color:#fbf2e1;
+    background-color: #ac7163;
+    border: none;
+
+}
+
+
+a {
+    color: var(none);
+    text-decoration: none;
+}
