@@ -1,0 +1,64 @@
+.DesktopAboutTitle {
+    text-align: center;
+    color:#057a75;
+}
+
+.DesktopTanyaAboutImg {
+    width:40%;
+}
+
+.DesktopAboutImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:3%;
+}
+
+
+.DesktopAboutText {
+    padding-left: 3rem;
+    padding-top: 2rem;
+    font-family:"Shadows Into Light Two", serif;
+    font-size: 2rem;
+    color:#3d7003;
+}
+
+
+.MobileAboutImageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.MobileAboutTitle {
+    font-size: 3rem;
+    text-align: center;
+    color:#057a75;
+}
+
+.MobileTanyaAboutImg {
+    width:80%
+}
+
+.MobileAboutText {
+    margin: 1rem;
+    font-family:"Martel", serif;
+    font-size: 1.1rem;
+    color:#3d7003;
+    padding-top: 1rem;
+    
+}
+
+.FiveThingsText {
+    font-family:"Martel", serif;
+    font-size: 1.1rem;
+    color:#3d7003;
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: -1rem;
+}
+
