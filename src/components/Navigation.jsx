@@ -7,7 +7,7 @@ const Navigation = () => {
     return (
         <>
             <Navbar className='nav' collapseOnSelect expand='sm'>
-                <Container>
+                <Container className='navContainer'>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='responsive-navbar-nav'>
                         <Nav className="mt-3 m-auto justify-content-between w-100" id='navbar'>

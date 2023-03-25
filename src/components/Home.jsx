@@ -1,6 +1,7 @@
 //import styles from './CarouselDisplay';
 //import styles2 from './OverlayingImages';
-import CarouselDisplay from "./CarouselDisplay";
+//import CarouselDisplay from "./CarouselDisplay";
+import Carousel2 from "./Gallery";
 import { useMediaQuery } from "react-responsive";
 import '../CSS_Files/logogradient.css';
 import { AnimatedGradient } from "./AnimatedGradient";
@@ -19,9 +20,9 @@ export default function Home () {
     const isMobile = useMediaQuery({ maxWidth: 767 });
 
         return(
-            <> 
+            <>
                 <div>
-                    <CarouselDisplay/>
+                    <Carousel2/>
                 </div>
                 {isDesktop &&
                     <div className="DesktopHomeContainer">
@@ -68,7 +69,7 @@ export default function Home () {
                     </div>
                 }
 
-            {isMobile &&   
+            {isMobile &&
                 <div className="MobileHomeContainer">
                         <div className="MobileSticky">
                             <div className='MobileGradient'>

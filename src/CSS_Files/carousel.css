@@ -1,0 +1,22 @@
+.CarouselContainer {
+    display:grid;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.Carousel {
+    max-width: 80%;
+}
+
+.CarouselTitle {
+    font-family: "Poiret One", sans-serif;
+    text-align: center;
+
+}
+
+.carousel .carousel-status{
+    display: none;
+}

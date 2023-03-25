@@ -1,3 +1,19 @@
+.ContactPage {
+    padding-top: 0;
+    background-image: url("../Images/feathers.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
+
+.ContactIntro {
+    padding-top: 0;
+    height: 600px;
+    background-image: url("../Images/feathers.jpg");
+    background-attachment: fixed;
+    background-position: right;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -47,11 +63,26 @@ input {
 }
 
 .MobileContactText {
-    margin: 1rem;
+ 
     font-family:"Martel", sans-serif;
     font-size: 2rem;
     color:#3d7003;
     padding-top: 1rem;
     text-align: center;
     line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.MobileContactTextSmall{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: "Martel", sans-serif;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.MobileCompanyText {
+    text-align: center;
+    font-family: 'Waterfall', sans-serif;
+    font-size: 3.5rem;
 }

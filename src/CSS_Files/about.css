@@ -35,7 +35,6 @@
 }
 
 .MobileAboutTitle {
-    font-size: 3rem;
     text-align: center;
     color:#057a75;
 }
@@ -44,21 +43,29 @@
     width:80%
 }
 
-.MobileAboutText {
+.MobileAboutTextLarge {
     margin: 1rem;
     font-family:"Martel", serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color:#3d7003;
     padding-top: 1rem;
     
 }
 
-.FiveThingsText {
+.MobileAboutTextSmall {
+    font-family:"Martel", serif;
+    font-size: 1.1rem;
+    color:#3d7003;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.MobileFiveThingsText {
     font-family:"Martel", serif;
     font-size: 1.1rem;
     color:#3d7003;
     text-align: left;
     margin-left: 2rem;
-    margin-top: -1rem;
+    margin-top: 1rem;
 }
 

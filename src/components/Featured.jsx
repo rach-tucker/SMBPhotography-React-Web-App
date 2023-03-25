@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import '../CSS_Files/featured.css';
 import Portrait1 from '../Images/portrait1.jpg';
 import Portrait2 from '../Images/Portrait2.jpg';
-import Portrait3 from '../Images/portrait3.jpg'
+import Portrait3 from '../Images/portrait3.jpg';
 
 
 const Featured = () => {

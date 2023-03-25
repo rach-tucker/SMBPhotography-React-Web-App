@@ -8,10 +8,12 @@
   }
 
   h1 span span {
-    color: white;
+    color: rgb(0, 0, 0);
     position: relative;
     opacity: 0;
-    animation: move-text 0.75s forwards;
+    animation: move-text 0.90s forwards;
+    font-family:"Waterfall", serif;
+    font-size: 7vh;
   }
 
 

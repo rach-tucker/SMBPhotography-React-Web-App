@@ -42,6 +42,7 @@
     margin-bottom: 200px;
     padding: 25px;
     background-image: url("../Images/boho-8.jpg");
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

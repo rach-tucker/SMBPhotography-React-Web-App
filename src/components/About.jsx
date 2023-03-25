@@ -1,5 +1,6 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import Typewriter from 'typewriter-effect';
 import '../CSS_Files/about.css';
 import Tanya from '../Images/Tanya-1.jpg';
 
@@ -7,6 +8,13 @@ const About = () => {
 
     const isDesktop = useMediaQuery({ minWidth: 992 });
     const isMobile = useMediaQuery({ maxWidth: 767 });
+    <Typewriter
+    options={{
+    strings: ['Hello', 'World'],
+    autoStart: true,
+    loop: true,
+    }}
+    />
 
     return (
         <> 
@@ -35,14 +43,21 @@ const About = () => {
                     </div>
                     <div className='MobileAboutImageContainer'>
                         <img className='MobileTanyaAboutImg' src={Tanya} alt='Tanya'/>
-                    <p className='MobileAboutText'>Hi, I'm Tanya! <br></br><br></br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit tempore ipsam laborum ipsum placeat animi officiis laudantium, maxime nulla nobis ullam dolorum culpa, necessitatibus fugiat sunt illo. Nemo, inventore fugiat. Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
-                    </br><br></br>Five Things About Me! Because, why not?<br></br><br></br></p>
-                        <p className='FiveThingsText'> 1. I'm a baking enthusiast<br></br>
+                    <p className='MobileAboutTextLarge'>Hi, I'm Tanya!</p>
+                    <p className='MobileAboutTextSmall'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit tempore ipsam laborum ipsum placeat animi officiis laudantium, maxime nulla nobis ullam dolorum culpa, necessitatibus fugiat sunt illo. Nemo, inventore fugiat. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div className='mobilehearts'>
+                    <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                    <div>
+                        <p className='MobileAboutTextLarge'>Five Things About Me! Because, why not?</p>
+                        <p className='MobileFiveThingsText'> 1. I'm a baking enthusiast<br></br>
                         2. I have a "small" plant obsession<br></br>
                         3. My interior style is Modern Farmhouse<br></br>
                         4. On my free time I explore the great outdoors of Colorado<br></br>
                         5. I own a small business in Colorado Springs called Findings
                        </p>
+                    </div>
+                    </div>
+                    
                         
                     </div>
                 </div>

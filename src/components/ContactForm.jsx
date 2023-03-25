@@ -1,10 +1,12 @@
 import React from 'react';
 import { useMediaQuery } from "react-responsive";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import '../CSS_Files/contact.css'
 
-function ContactForm () {
+
+export default function ContactForm (props) {
 
 const isMobile = useMediaQuery({ maxWidth: 767 });
 
@@ -41,12 +43,19 @@ const onSubmit = (e) => {
     return (
         <>
             {isMobile &&
-            <div>
+            <div className='ContactPage'>
                 <div>
-                <h1 className='MobileContactText'>FIRST THINGS FIRST.<br></br>LET'S GET TO KNOW EACH OTHER.</h1>
+                    <h1 className='MobileContactText'>FIRST THINGS FIRST.<br></br>LET'S GET TO KNOW EACH OTHER.</h1>
                 </div>
+                <div className='MobileContactTextSmall'>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia aliquam nisi odit sint. Laboriosam voluptas eveniet illo deleniti sunt molestias, quam expedita ea tempore vel exercitationem est quis et?</p>
+                </div>         
+                <div>
                 <div className='mobilehearts'>
                     <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                </div>
+                    <h1 className='MobileContactText'>GET IN TOUCH WITH</h1>
+                    <h1 className='MobileCompanyText'>Soul Meets Body Photography</h1>
                 </div>
                 <form onSubmit={onSubmit}>
                     <input
@@ -90,14 +99,32 @@ const onSubmit = (e) => {
                         value={toSend.reply_to}
                         onChange={handleChange}
                     />
-                    <div className='ContactButtonContainer'>
-                        <button className='ContactButton' type='submit'>SEND ME A MESSAGE</button>
+                    <div className='ContactButtonContainer'>                 
+                        <button type="submit" className='ContactButton' data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        SEND ME A MESSAGE
+                        </button>
                     </div>
+                        <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal-dialog">
+                            <div className="modal-content">
+                            <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="exampleModalLabel">Thank you!</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                                Your message has been sent. Please allow up to 36 hours for a response!
+                            </div>
+                            <div className="modal-footer">
+                            <Link to='/home'>
+                                <button type="button" className="btn btn-secondary">Okay</button>                    
+                            </Link>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
                 </form>  
             </div>
             }
         </>
     )
 }
-
-export default ContactForm;
