@@ -1,6 +1,5 @@
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import Typewriter from 'typewriter-effect';
 import '../CSS_Files/about.css';
 import Tanya from '../Images/Tanya-1.jpg';
 
@@ -8,13 +7,6 @@ const About = () => {
 
     const isDesktop = useMediaQuery({ minWidth: 992 });
     const isMobile = useMediaQuery({ maxWidth: 767 });
-    <Typewriter
-    options={{
-    strings: ['Hello', 'World'],
-    autoStart: true,
-    loop: true,
-    }}
-    />
 
     return (
         <> 

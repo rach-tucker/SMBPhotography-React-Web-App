@@ -1,7 +1,7 @@
 //import styles from './CarouselDisplay';
 //import styles2 from './OverlayingImages';
 //import CarouselDisplay from "./CarouselDisplay";
-import Carousel2 from "./Gallery";
+import CarouselDisplay from "./Carousel";
 import { useMediaQuery } from "react-responsive";
 import '../CSS_Files/logogradient.css';
 import { AnimatedGradient } from "./AnimatedGradient";
@@ -22,7 +22,7 @@ export default function Home () {
         return(
             <>
                 <div>
-                    <Carousel2/>
+                    <CarouselDisplay/>
                 </div>
                 {isDesktop &&
                     <div className="DesktopHomeContainer">
