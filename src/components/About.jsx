@@ -2,6 +2,7 @@ import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 import '../CSS_Files/about.css';
 import Tanya from '../Images/Tanya-1.jpg';
+import SeeMyWork from './SeeMyWork';
 
 const About = () => {
 
@@ -51,6 +52,9 @@ const About = () => {
                     </div>
                     
                         
+                    </div>
+                    <div>
+                        <SeeMyWork/>
                     </div>
                 </div>
             }

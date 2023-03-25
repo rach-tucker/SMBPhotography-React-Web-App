@@ -5,6 +5,7 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/ContactForm';
 import './CSS_Files/font.css';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
                 <Route path='/gallery' element={ <Gallery /> }/>               
                 <Route path='/contact' element={ <ContactForm /> }/>  
             </Routes>
+            <Footer/>
         </div>
     );
 }

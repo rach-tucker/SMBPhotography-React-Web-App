@@ -1,0 +1,51 @@
+.SeeMyWorkContainer {
+    height: fit-content;
+    padding-top: 3rem;
+}
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* Full height */
+    height: 200px;
+
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url('../Images/Scrollingbackground1.jpg'); }
+  .img2 { background-image: url('../Images/Scrollingbackground2.jpg'); }
+  .img3 { background-image: url('../Images/Scrollingbackground3.jpg'); }
+  .img4 { background-image: url('../Images/scrollingbackground4.jpg'); }
+  .img5 { background-image: url('../Images/scrollingbackground5.jpg'); }
+  .img6 { background-image: url('../Images/scrollingbackground6.jpg'); }
+  
+
+  .MobileStickyContainer {
+    position:sticky;
+    top:15rem;
+    position: -webkit-sticky;
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    margin: auto;
+  }
+
+  .MobileGalleryButton {
+    text-align: center;
+    font-family:"Martel", serif;
+    font-size: 2vh;
+    color:#fbf2e1;
+    background-color: #ac7163;
+    opacity: .8;
+    border: none;
+    width: 230px;
+    height:80px;
+
+  }

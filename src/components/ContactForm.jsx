@@ -3,7 +3,8 @@ import { useMediaQuery } from "react-responsive";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-import '../CSS_Files/contact.css'
+import '../CSS_Files/contact.css';
+import SeeMyWork from './SeeMyWork';
 
 
 export default function ContactForm () {
@@ -105,24 +106,27 @@ const isMobile = useMediaQuery({ maxWidth: 767 });
                         </button>
                     </div>
                         <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div className="modal-dialog">
-                            <div className="modal-content">
-                            <div className="modal-header">
-                                <h1 className="modal-title fs-5" id="exampleModalLabel">Thank you!</h1>
-                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div className="modal-dialog">
+                                <div className="modal-content">
+                                <div className="modal-header">
+                                    <h1 className="modal-title fs-5" id="exampleModalLabel">Thank you!</h1>
+                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div className="modal-body">
+                                    Your message has been sent. Please allow up to 36 hours for a response!
+                                </div>
+                                <div className="modal-footer">
+                                <Link to='/home'>
+                                    <button type="button" className="btn btn-secondary">Okay</button>                    
+                                </Link>
+                                </div>
+                                </div>
                             </div>
-                            <div className="modal-body">
-                                Your message has been sent. Please allow up to 36 hours for a response!
-                            </div>
-                            <div className="modal-footer">
-                            <Link to='/home'>
-                                <button type="button" className="btn btn-secondary">Okay</button>                    
-                            </Link>
-                            </div>
-                            </div>
-                        </div>
                         </div>
                 </form>  
+                        <div>
+                            <SeeMyWork/>
+                        </div>
             </div>
             }
         </>

@@ -1,11 +1,26 @@
 import React from 'react';
+import '../CSS_Files/seemywork.css';
+import { Link } from 'react-router-dom';
 
 
 export default function SeeMyWork () {
     return (
         <>
-            <div>
-                <h1></h1>
+            <div className='SeeMyWorkContainer'>
+            <div className='mobilehearts'>
+                    <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                </div>
+                <div className='MobileStickyContainer'>
+                <Link to="/gallery">
+                    <button className='MobileGalleryButton'>VIEW MY PORTFOLIO</button>
+                </Link>
+                </div>
+                <div className="bg-image img1"></div>
+                <div className="bg-image img2"></div>
+                <div className="bg-image img3"></div>
+                <div className="bg-image img4"></div>
+                <div className="bg-image img5"></div>
+                <div className="bg-image img6"></div>      
             </div>
         </>
     )
