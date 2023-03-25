@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 import '../CSS_Files/contact.css'
 
 
-export default function ContactForm (props) {
+export default function ContactForm () {
 
 const isMobile = useMediaQuery({ maxWidth: 767 });
 
@@ -19,21 +19,21 @@ const isMobile = useMediaQuery({ maxWidth: 767 });
         reply_to: '',
       });
     
-const onSubmit = (e) => {
-    e.preventDefault();
-    emailjs.send(
-        'service_6uv95ek',
-        'template_9r7rcja',
-        toSend,
-        'cJj9NMBXEJbIQXZ52'
-          )
-        .then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
-        })
-        .catch((err) => {
-            console.log('FAILED...', err);
-        });
-    };
+    const onSubmit = (e) => {
+        e.preventDefault();
+        emailjs.send(
+            'service_6uv95ek',
+            'template_9r7rcja',
+            toSend,
+            'cJj9NMBXEJbIQXZ52'
+            )
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+            })
+            .catch((err) => {
+                console.log('FAILED...', err);
+            });
+        };
 
     
     const handleChange = (e) => {

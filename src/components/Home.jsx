@@ -1,7 +1,4 @@
-//import styles from './CarouselDisplay';
-//import styles2 from './OverlayingImages';
-//import CarouselDisplay from "./CarouselDisplay";
-import CarouselDisplay from "./Carousel";
+import CarouselDisplay from "./CarouselDisplay";
 import { useMediaQuery } from "react-responsive";
 import '../CSS_Files/logogradient.css';
 import { AnimatedGradient } from "./AnimatedGradient";
