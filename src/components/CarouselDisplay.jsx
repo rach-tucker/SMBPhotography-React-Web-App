@@ -18,7 +18,7 @@ class CarouselDisplay extends React.Component {
         return (
             <div className="CarouselContainer">
                 <div>
-                    <h1><SplitText copy="Oh, hello there" role="heading" /></h1>
+                    <h1><SplitText copy="Oh, hello there!" role="heading" /></h1>
                 </div>
                 <Carousel className="Carousel" autoPlay interval="3000" transitionTime="2000" infiniteLoop>
                     <div>
