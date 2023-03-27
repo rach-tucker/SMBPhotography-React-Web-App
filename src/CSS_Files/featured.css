@@ -1,7 +1,7 @@
 .MobileFeaturedContainer {
     display: flex;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 2rem;
     padding-bottom: 30px;
 }
 
@@ -16,8 +16,11 @@
 }
 
 .MobileFeaturedTitle {
-    padding-top: 20rem;
-    font-size: 7vh;
+    font-family: "lindsey-signature", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 1rem;
+    font-size: 6vh;
     text-align: center;
 }
 
@@ -26,18 +29,21 @@
     margin: auto;
     width: 220px;
     height:60px;
-    padding-top: 1rem;
+    margin-top: 3rem;
 }
 
 .MobileFeaturedText {
     font-family: "Martel", serif;
+    margin-top: 1rem;
+    padding: 2rem;
+    line-height: 2;
 }
 
 .MobileContactButton {
     font-family:"Martel", serif;
     font-size: 2vh;
     color:#fbf2e1;
-    background-color: #ac7163;
+    background-color: #d09985;
     border: none;
 
 }

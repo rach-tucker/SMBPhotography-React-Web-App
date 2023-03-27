@@ -15,6 +15,9 @@ const isMobile = useMediaQuery({ maxWidth: 767 });
         <>
             {isMobile &&
             <div>
+                 <div className='mobilehearts'>
+                    <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                </div>
                 <h2 className='MobileFeaturedTitle'>Work With Me</h2>
                 <p className='MobileFeaturedText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora aut voluptatem repellat soluta molestias recusandae, dolorum vero. Ipsum doloremque fuga iure, aliquid atque fugiat. Deleniti tenetur molestiae soluta culpa!</p>
                 <div className='MobileFeaturedContainer'>
@@ -28,7 +31,7 @@ const isMobile = useMediaQuery({ maxWidth: 767 });
                         <img className='MobileFeatImg' src={Portrait3}alt="Mountains"/>
                     </div>
                 </div>
-                <Link to="/contact" className='MobileButtonContainer'>
+                <Link to="/contact" className='MobileButtonContainer' onClick={() => window.scrollTo(0, 0)}>
                     <button className='MobileContactButton'>SEND ME A MESSAGE</button>
                 </Link>
             </div>

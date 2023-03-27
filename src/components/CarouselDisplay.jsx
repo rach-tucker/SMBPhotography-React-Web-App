@@ -20,7 +20,7 @@ class CarouselDisplay extends React.Component {
                 <div>
                     <h1><SplitText copy="Oh, hello there" role="heading" /></h1>
                 </div>
-                <Carousel className="Carousel" autoPlay interval="5000" transitionTime="3000" infiniteLoop>
+                <Carousel className="Carousel" autoPlay interval="3000" transitionTime="2000" infiniteLoop>
                     <div>
                     <img src={listOfImages[0]} className="d-block w-100" alt="..."/>
                         

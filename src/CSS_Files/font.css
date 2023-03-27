@@ -2,19 +2,37 @@
     padding: 0;
     margin: 0;
   }
+
   
   body {
-    background-color: #fbf2e1;
+    background-color: #f7f4ef;
   }
 
+  @media (max-width: 767px){
+
+    h1 span span {
+      color: rgb(0, 0, 0);
+      position: relative;
+      opacity: 0;
+      animation: move-text 0.90s forwards;
+      font-size: 6vh;
+      font-family: "lindsey-signature", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
+
+
+@media (min-width: 1200px){
   h1 span span {
     color: rgb(0, 0, 0);
     position: relative;
     opacity: 0;
     animation: move-text 0.90s forwards;
     font-family:"Waterfall", serif;
-    font-size: 7vh;
+    font-size: 12vh;
   }
+}
 
 
 @media (min-width: 1200px){
@@ -23,26 +41,13 @@
   }
 }
 
-@media (max-width: 767px){
-  .carousel-caption{
-    font-family: "Poiret One", sans-serif;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    position: absolute;
-    padding-bottom: 6.5rem;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-  }
   h1 {
     font-size: 3.5vh;
   }
   P {
     text-align: center;
   }
-}
-  
+
 @media (min-width: 1200px){
   .carousel-caption{
     display: flex;
@@ -77,39 +82,60 @@
 }
       
 .DesktopQuote1 {
-  font-size: 4vw;
+  font-size: 3.5vw;
   position: absolute;
-  font-family:"Shadows Into Light Two", serif;
+  font-family:"Martel", serif;
   text-align: center;
   margin-top: 200px;
   margin-left: 900px;
   color:#057a75;
+  padding: 20px;
+}
+
+.DesktopLocationContainer {
+  padding-top: 250px;
+}
+
+.DesktopLocationTitle {
+  font-family:"Waterfall", serif;
+  text-align: center;
+  font-size: 14vh;
+}
+
+.DesktopLocationText {
+  padding: 3rem;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-family:"Martel", serif;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.DesktopAboutButtonContainer {
+  display: grid;
+  margin: auto;
+  width: 250px;
+  height:90px;
+  padding-top: 1rem;
+}
+
+.DesktopAboutButton {
+  font-family:"Martel", serif;
+  font-size: 2.5vh;
+  color:#fbf2e1;
+  background-color: #d09985;
+  border: none;
 }
       
 .MobileQuote1 {
+  display: inline-block;
   font-size: 4vw;
   position: absolute;
   font-family:"Martel", serif;
   text-align: center;
   margin-top: 20px;
-  margin-left: 275px;
-  margin-right: 20px;
+  margin-left: 18.5rem;
   color:#057a75;
-}
-
-.MobileLocationContainer {
-  padding-top:30px;
-}
-
-.MobileLocationTitle {
-  font-family:"Waterfall", serif;
-  text-align: center;
-  font-size: 7vh;
-}
-
-.MobileLocationText {
-  margin: 5px;
-  font-family:"Martel", serif;
 }
 
 
@@ -126,35 +152,17 @@ h2 {
   font-size: 5.8vh;
   padding-bottom: 0;
   margin:.5rem;
-  font-family: "Waterfall", sans-serif;
+  font-family: "lindsey-signature", sans-serif;
+  font-weight: 400;
+  font-style: normal;
        
   }
 }
 
-.MobileAboutButtonContainer {
-  display: grid;
-  margin: auto;
-  width: 180px;
-  height:60px;
-  padding-top: 1rem;
-}
-
-.MobileAboutButton{
-  font-family:"Martel", serif;
-  font-size: 2vh;
-  color:#fbf2e1;
-  background-color: #ac7163;
-  border: none;
-}
-
-.mobilehearts{
-  font-size: 6vh;
-  color:#ac7163;
-}
       
 .desktophearts {
   font-size: 16vh;
-  color:#ac7163;
+  color:#d09985;
 }
 
 h3{

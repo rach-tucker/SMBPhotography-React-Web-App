@@ -7,8 +7,16 @@
     align-items: center;
 }
 
-.Carousel {
-    max-width: 90%;
+@media (max-width: 767px){
+    .Carousel {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 1200px){
+    .Carousel {
+        max-width: 60%;
+    }
 }
 
 .CarouselTitle {

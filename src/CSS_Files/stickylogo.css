@@ -1,0 +1,30 @@
+.DesktopSticky {
+    height: 20vh;
+    width: 100%;
+    color: #fff;
+    background-image: url("../Images/smbp-logo2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    position:sticky;
+    top:0;
+    bottom:auto;
+    z-index: 1;
+}
+  
+
+.MobileSticky {
+  height: 12vh;
+  width: 100%;
+  color: #fff;
+  background-image: url("../Images/smbp-logo2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  position:sticky;
+  top:-.1rem;
+  bottom:auto;
+  z-index: 1;
+}
+
+  

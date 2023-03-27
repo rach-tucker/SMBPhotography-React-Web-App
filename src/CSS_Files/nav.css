@@ -1,5 +1,5 @@
 .nav {
-    background-color: #fbf2e1;
+    background-color: #f7f4ef;
     color:#fbf2e1;
 }
 
@@ -7,6 +7,24 @@
     color:#057a75
 }
 
-.navContainer {
-    background-image: url("../Images/boho-8.jpg");
+
+@media (min-width: 1200px){
+    .navContainer {
+        background-image:none;
+    }
+    
+    .navlogo {
+        width: 50%;
+        clip-path: circle();
+    }
+}
+
+@media (max-width: 767px){
+
+    .navlogo {
+        width: 50%;
+        clip-path: circle();
+        position: center;
+        align-self: center;
+    }
 }

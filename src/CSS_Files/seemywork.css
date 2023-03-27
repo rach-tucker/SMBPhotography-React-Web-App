@@ -1,6 +1,6 @@
 .SeeMyWorkContainer {
     height: fit-content;
-    padding-top: 3rem;
+ 
 }
   
   * {
@@ -29,12 +29,13 @@
 
   .MobileStickyContainer {
     position:sticky;
-    top:15rem;
+    top:1rem;
     position: -webkit-sticky;
     padding: 2rem;
     text-align: center;
     display: grid;
     margin: auto;
+    margin-bottom: 2rem;
   }
 
   .MobileGalleryButton {
@@ -42,7 +43,7 @@
     font-family:"Martel", serif;
     font-size: 2vh;
     color:#fbf2e1;
-    background-color: #ac7163;
+    background-color: #d09985;
     opacity: .8;
     border: none;
     width: 230px;

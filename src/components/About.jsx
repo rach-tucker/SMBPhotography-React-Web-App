@@ -38,24 +38,24 @@ const About = () => {
                         <img className='MobileTanyaAboutImg' src={Tanya} alt='Tanya'/>
                     <p className='MobileAboutTextLarge'>Hi, I'm Tanya!</p>
                     <p className='MobileAboutTextSmall'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit tempore ipsam laborum ipsum placeat animi officiis laudantium, maxime nulla nobis ullam dolorum culpa, necessitatibus fugiat sunt illo. Nemo, inventore fugiat. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <div className='mobilehearts'>
-                    <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                 
+                        <p className='AboutMobileHearts'> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                   
                     <div>
                         <p className='MobileAboutTextLarge'>Five Things About Me! Because, why not?</p>
                         <p className='MobileFiveThingsText'> 1. I'm a baking enthusiast<br></br>
-                        2. I have a "small" plant obsession<br></br>
-                        3. My interior style is Modern Farmhouse<br></br>
-                        4. On my free time I explore the great outdoors of Colorado<br></br>
-                        5. I own a small business in Colorado Springs called Findings
+                        <br></br>2. I have a "small" plant obsession<br></br>
+                        <br></br>3. My interior style is Modern &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Farmhouse<br></br>
+                        <br></br>4. On my free time I explore the great &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outdoors of Colorado<br></br>
+                        <br></br>5. I own a small business in Colorado &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Springs called Findings
                        </p>
-                    </div>
                     </div>
                     
                         
                     </div>
-                    <div>
+   
                         <SeeMyWork/>
-                    </div>
+
                 </div>
             }
         </>

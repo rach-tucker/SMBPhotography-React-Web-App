@@ -37,6 +37,7 @@
 .MobileAboutTitle {
     text-align: center;
     color:#057a75;
+    
 }
 
 .MobileTanyaAboutImg {
@@ -59,6 +60,12 @@
     text-align: center;
     margin-top: 1rem;
     padding: 1rem;
+}
+
+.AboutMobileHearts {
+    font-size: 6vh;
+    color:#d09985;
+    position: relative;
 }
 
 .MobileFiveThingsText {

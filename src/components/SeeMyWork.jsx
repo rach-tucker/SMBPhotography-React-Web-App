@@ -7,11 +7,8 @@ export default function SeeMyWork () {
     return (
         <>
             <div className='SeeMyWorkContainer'>
-            <div className='mobilehearts'>
-                    <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
-                </div>
                 <div className='MobileStickyContainer'>
-                <Link to="/gallery">
+                <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>
                     <button className='MobileGalleryButton'>VIEW MY PORTFOLIO</button>
                 </Link>
                 </div>

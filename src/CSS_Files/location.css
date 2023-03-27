@@ -1,0 +1,54 @@
+.MobileLocationContainer {
+    background-image: url("../Images/boho-4.jpg");
+    background-position: top;
+    margin-top: 9rem;
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+}
+
+  
+  .MobileLocationTitleContainer {
+    padding-top:0rem;
+  }
+  
+  .MobileLocationTitle {
+    font-family: "lindsey-signature", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 6vh;
+    margin-top: 0;
+  }
+  
+  .MobileLocationText {
+    margin-left: 1rem;
+    margin-right: 3rem;
+    line-height: 2;
+    text-align: left;
+    margin-top: 1rem;
+    font-family:"Martel", serif;
+  }
+
+  .MobileAboutButtonContainer {
+    display: grid;
+    margin: auto;
+    width: 180px;
+    height:60px;
+    margin-top: 2rem;
+  }
+  
+  .MobileAboutButton{
+    font-family:"Martel", serif;
+    font-size: 2vh;
+    color:#fbf2e1;
+    background-color: #d09985;
+    opacity: .9;
+    border: none;
+  }
+  
+  .mobilehearts{
+    font-size: 6vh;
+    color:#d09985;
+    position: relative;
+    margin-top: 45px;
+}

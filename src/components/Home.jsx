@@ -1,10 +1,10 @@
 import CarouselDisplay from "./CarouselDisplay";
 import { useMediaQuery } from "react-responsive";
-import '../CSS_Files/logogradient.css';
-import { AnimatedGradient } from "./AnimatedGradient";
+import '../CSS_Files/stickylogo.css';
 import OverlappingImages from './OverlayingImages';
 import TabletOverlappingImages from './TabletOverlayingImages';
 import MobileOverlappingImages from "./MobileOverlayingImages";
+import Location from "./Location";
 import Featured from "./Featured";
 import Testimonials from "./Testimonials";
 import InstaDisplay from "./InstaDisplay";
@@ -18,21 +18,10 @@ export default function Home () {
 
         return(
             <>
-                <div>
-                    <CarouselDisplay/>
-                </div>
+                <CarouselDisplay/>
                 {isDesktop &&
                     <div className="DesktopHomeContainer">
-                            <div className="DesktopSticky">
-                                <div className='DesktopGradient'>
-                                    <div>
-                                        {AnimatedGradient}
-                                    </div>
-                                    <div className="DesktopLogoTextBox">
-                                        <p className="DesktopLogoText">~ Soul Meets Body Photography ~</p>
-                                    </div>
-                                </div>
-                            </div>               
+                            <div className="DesktopSticky"></div>               
                         <div>
                             <OverlappingImages/> 
                         </div>
@@ -49,9 +38,6 @@ export default function Home () {
                     <div className="TabletHomeContainer">
                             <div className="TabletSticky">
                                 <div className='TabletGradient'>
-                                    <div>
-                                        {AnimatedGradient}
-                                    </div>
                                     <div className="TabletLogoTextBox">
                                         <p className="TabletLogoText">Tablet Screen!</p>
                                     </div>
@@ -67,27 +53,13 @@ export default function Home () {
                 }
 
             {isMobile &&
-                <div className="MobileHomeContainer">
-                        <div className="MobileSticky">
-                            <div className='MobileGradient'>
-                                <div>
-                                    {AnimatedGradient}
-                                </div>
-                                <div className="MobileLogoTextBox">
-                                    <p className="MobileLogoText">Soul Meets Body Photography</p>
-                                </div>
-                            </div>
-                        </div>               
-                    <div>
-                        <MobileOverlappingImages/> 
-                    </div>
-                    <div>
-                        <Featured/>
-                    </div>
-                    <div>
-                        <Testimonials/>
-                    </div>
-                </div>
+                <>
+                    <div className='MobileSticky'></div>                                 
+                    <MobileOverlappingImages/>
+                    <Location/>
+                    <Featured/>
+                    <Testimonials/>      
+                </>    
             }
         </>
     )

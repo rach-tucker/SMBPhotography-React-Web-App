@@ -1,5 +1,6 @@
 import React from 'react';
-import '../CSS_Files/font.css'
+import { Link } from 'react-router-dom';
+import '../CSS_Files/font.css';
 
 const DesktopStyles = {
     parent: {
@@ -26,7 +27,7 @@ const DesktopStyles = {
     },
     desktophearts: {
         position:'absolute',
-        top:'600px'
+        top:'1300px'
     }
 } 
 
@@ -48,9 +49,19 @@ class OverlappingImages extends React.Component{
                 <h2 className='DesktopQuote1'>"I capture fleeting moments, <br></br>so they last a lifetime"</h2>
                 <img className="image1" src={overlapImagesList[0]} style={DesktopStyles.image1} alt="bottomimg" />
                 <img className="image2" src={overlapImagesList[1]} style={DesktopStyles.image2} alt="topimg" />
+               
+                <div className='DesktopLocationContainer'>
+                    <h2 className='DesktopLocationTitle'>Colorado Photographer</h2>
+                </div>
+                <div>
+                    <p className='DesktopLocationText'>Though I wasn't born in Colorado, I consider Colorado my home. Throughout the several years of photographing in this beautiful state, I have found some truly magical spots that I'm excited to take you to!</p>
+                </div>
                 <div className='desktophearts' style={DesktopStyles.desktophearts}>
                     <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
                 </div>
+                <Link to="/about" className='DesktopAboutButtonContainer'>
+                    <button className='DesktopAboutButton'>LEARN MORE</button>
+                </Link>
             </div>
             
             </>

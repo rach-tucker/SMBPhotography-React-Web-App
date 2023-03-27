@@ -52,9 +52,9 @@ const isMobile = useMediaQuery({ maxWidth: 767 });
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia aliquam nisi odit sint. Laboriosam voluptas eveniet illo deleniti sunt molestias, quam expedita ea tempore vel exercitationem est quis et?</p>
                 </div>         
                 <div>
-                <div className='mobilehearts'>
-                    <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
-                </div>
+
+                    <p className='MobileContactHearts'> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+
                     <h1 className='MobileContactText'>GET IN TOUCH WITH</h1>
                     <h1 className='MobileCompanyText'>Soul Meets Body Photography</h1>
                 </div>
@@ -105,6 +105,9 @@ const isMobile = useMediaQuery({ maxWidth: 767 });
                         SEND ME A MESSAGE
                         </button>
                     </div>
+                 
+                        <p className='MobileContactBottomHearts'> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                   
                         <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog">
                                 <div className="modal-content">
@@ -116,7 +119,7 @@ const isMobile = useMediaQuery({ maxWidth: 767 });
                                     Your message has been sent. Please allow up to 36 hours for a response!
                                 </div>
                                 <div className="modal-footer">
-                                <Link to='/home'>
+                                <Link to='/home' onClick={() => window.scrollTo(0, 0)}>
                                     <button type="button" className="btn btn-secondary">Okay</button>                    
                                 </Link>
                                 </div>
