@@ -1,6 +1,5 @@
 import CarouselDisplay from "./CarouselDisplay";
 import { useMediaQuery } from "react-responsive";
-import '../CSS_Files/stickylogo.css';
 import OverlappingImages from './OverlayingImages';
 import TabletOverlappingImages from './TabletOverlayingImages';
 import MobileOverlappingImages from "./MobileOverlayingImages";
@@ -8,10 +7,11 @@ import Location from "./Location";
 import Featured from "./Featured";
 import Testimonials from "./Testimonials";
 import InstaDisplay from "./InstaDisplay";
+import '../CSS_Files/stickylogo.css';
 
 export default function Home () {
-
-
+    
+    
     const isDesktop = useMediaQuery({ minWidth: 992 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
     const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -19,19 +19,15 @@ export default function Home () {
         return(
             <>
                 <CarouselDisplay/>
-                {isDesktop &&
-                    <div className="DesktopHomeContainer">
-                            <div className="DesktopSticky"></div>               
-                        <div>
-                            <OverlappingImages/> 
-                        </div>
-                        <div>
-                            <Testimonials/>
-                        </div>
-                        <div>
-                            <InstaDisplay/>
-                        </div>
-                    </div>
+                    {isDesktop &&
+                    <>
+                        <div className="DesktopSticky"></div>               
+                        <OverlappingImages/> 
+                        <Location />
+                        <Featured />
+                        <Testimonials/>
+                        <InstaDisplay/>            
+                    </>             
                 }
 
                 {isTablet &&

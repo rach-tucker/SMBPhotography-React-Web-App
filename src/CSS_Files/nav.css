@@ -4,7 +4,8 @@
 }
 
 .navText {
-    color:#057a75
+    color:#057a75;
+    font-family: "Martel", sans-serif;
 }
 
 
@@ -14,17 +15,17 @@
     }
     
     .navlogo {
-        width: 50%;
+        width: 15%;
         clip-path: circle();
     }
 }
 
 @media (max-width: 767px){
-
     .navlogo {
         width: 50%;
         clip-path: circle();
         position: center;
         align-self: center;
+        margin-bottom: 1.5rem;
     }
 }

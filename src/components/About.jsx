@@ -26,6 +26,9 @@ const About = () => {
                         4. On my free time I explore the great outdoors of Colorado<br></br>
                         5. I own a small business in Colorado Springs called Findings</p>
                     </div>
+                    <p className='desktophearts'> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                    <SeeMyWork />
+
                 </div>
             }
 

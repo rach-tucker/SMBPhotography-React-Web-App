@@ -6,16 +6,16 @@ import '../CSS_Files/nav.css'
 const Navigation = () => {
     return (
         <>
-            <Navbar className='nav' collapseOnSelect expand='sm'>
+            <Navbar collapseOnSelect expand='sm' className='nav'>
                 <Container className='navContainer'>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='responsive-navbar-nav'>
-                        <Nav className="mt-3 m-auto justify-content-between w-100" id='navbar'>
+                        <Nav className="mt-3 m-auto justify-content-between w-100 align-items-center" id='navbar'>
                             <img className='navlogo' src={Brand} alt='logo'/>
-                            <Nav.Link className='navText' href='/'>Home</Nav.Link>
-                            <Nav.Link className='navText' href='/about'>About Me</Nav.Link>
-                            <Nav.Link className='navText' href='/gallery'>Gallery</Nav.Link>
-                            <Nav.Link className='navText' href='/contact'>Contact</Nav.Link>
+                            <Nav.Link className='navText' href='/'>HOME</Nav.Link>
+                            <Nav.Link className='navText' href='/about'>ABOUT ME</Nav.Link>
+                            <Nav.Link className='navText' href='/portfolio'>PORTFOLIO</Nav.Link>
+                            <Nav.Link className='navText' href='/contact'>CONTACT</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

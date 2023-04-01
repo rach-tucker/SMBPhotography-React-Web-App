@@ -1,4 +1,5 @@
 .DesktopAboutTitle {
+    font-family: "lindsey-signature", serif;
     text-align: center;
     color:#057a75;
 }
@@ -14,6 +15,8 @@
     margin-left:10%;
     margin-right:10%;
     margin-top:3%;
+    padding: 2rem;
+    padding-bottom: 3rem;
 }
 
 

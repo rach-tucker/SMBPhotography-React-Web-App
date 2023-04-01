@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.carousel .carousel-status{
+    display: none;
+}
+
 @media (max-width: 767px){
     .Carousel {
         max-width: 90%;
@@ -15,16 +19,6 @@
 
 @media (min-width: 1200px){
     .Carousel {
-        max-width: 60%;
+        max-width: 50%;
     }
-}
-
-.CarouselTitle {
-    font-family: "Poiret One", sans-serif;
-    text-align: center;
-
-}
-
-.carousel .carousel-status{
-    display: none;
 }

@@ -9,7 +9,9 @@ import Portrait3 from '../Images/portrait3.jpg';
 
 const Featured = () => {
 
-const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isDesktop = useMediaQuery({ minWidth: 992 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
 
     return(
         <>
@@ -35,6 +37,30 @@ const isMobile = useMediaQuery({ maxWidth: 767 });
                     <button className='MobileContactButton'>SEND ME A MESSAGE</button>
                 </Link>
             </div>
+            }
+
+            {isDesktop &&
+                <div>
+                    <div className='desktophearts'>
+                        <p> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; </p>
+                    </div>
+                    <h2 className='DesktopFeaturedTitle'>Work With Me</h2>
+                    <p className='DesktopFeaturedText'>I aim to create a fun and comfortable environment so I can capture your true, authentic self!</p>
+                    <div className='DesktopFeaturedContainer'>
+                        <div className='DesktopImgContainer'>
+                            <img className='DesktopFeatImg' src={Portrait1} alt="portrait"/>
+                        </div>
+                        <div className='DesktopImgContainer'>
+                            <img className='DesktopFeatImg' src={Portrait2} alt="Forest"/>
+                        </div>
+                        <div className='DesktopImgContainer'>
+                            <img className='DesktopFeatImg' src={Portrait3}alt="Mountains"/>
+                        </div>
+                    </div>
+                    <Link to="/contact" className='DesktopButtonContainer' onClick={() => window.scrollTo(0, 0)}>
+                        <button className='DesktopContactButton'>SEND ME A MESSAGE</button>
+                    </Link>
+                </div>
             }
         </>
     )

@@ -9,7 +9,9 @@ import SeeMyWork from './SeeMyWork';
 
 export default function ContactForm () {
 
-const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isDesktop = useMediaQuery({ minWidth: 992 });
+    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
 
     const [toSend, setToSend] = useState({
         from_name: '',
@@ -44,7 +46,7 @@ const isMobile = useMediaQuery({ maxWidth: 767 });
     return (
         <>
             {isMobile &&
-            <div className='ContactPage'>
+            <div className='MobileContactPage'>
                 <div>
                     <h1 className='MobileContactText'>FIRST THINGS FIRST.<br></br>LET'S GET TO KNOW EACH OTHER.</h1>
                 </div>
@@ -107,6 +109,96 @@ const isMobile = useMediaQuery({ maxWidth: 767 });
                     </div>
                  
                         <p className='MobileContactBottomHearts'> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+                   
+                        <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div className="modal-dialog">
+                                <div className="modal-content">
+                                <div className="modal-header">
+                                    <h1 className="modal-title fs-5" id="exampleModalLabel">Thank you!</h1>
+                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div className="modal-body">
+                                    Your message has been sent. Please allow up to 36 hours for a response!
+                                </div>
+                                <div className="modal-footer">
+                                <Link to='/home' onClick={() => window.scrollTo(0, 0)}>
+                                    <button type="button" className="btn btn-secondary">Okay</button>                    
+                                </Link>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                </form>  
+                        <div>
+                            <SeeMyWork/>
+                        </div>
+            </div>
+            }
+
+            {isDesktop &&
+            <div className='DesktopContactPage'>
+                <div>
+                    <h1 className='DesktopContactText'>FIRST THINGS FIRST.<br></br>LET'S GET TO KNOW EACH OTHER.</h1>
+                </div>
+                <div className='DesktopContactTextSmall'>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia aliquam nisi odit sint. Laboriosam voluptas eveniet illo deleniti sunt molestias, quam expedita ea tempore vel exercitationem est quis et?</p>
+                </div>         
+                <div>
+
+                    <p className='desktophearts'> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
+
+                    <h1 className='DesktopContactText'>GET IN TOUCH WITH</h1>
+                    <h1 className='DesktopCompanyText'>Soul Meets Body Photography</h1>
+                </div>
+                <form onSubmit={onSubmit}>
+                    <input
+                        type='text'
+                        name='from_name'
+                        placeholder='Your name'
+                        value={toSend.from_name}
+                        onChange={handleChange}
+                    />
+                    <textarea className='DesktopContactMessage' 
+                        name="message"
+                        placeholder='Your message'
+                        onChange={handleChange}
+                        value={toSend.message}
+                    />
+                    <input
+                        type='text'
+                        name='date'
+                        placeholder='mm/dd/yyyy'
+                        value={toSend.date}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type='text'
+                        name='location'
+                        placeholder='Location, if you know!'
+                        value={toSend.location}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type='text'
+                        name='budget'
+                        placeholder='Budget (if applicable.)'
+                        value={toSend.budget}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type='text'
+                        name='reply_to'
+                        placeholder='Your email'
+                        value={toSend.reply_to}
+                        onChange={handleChange}
+                    />
+                    <div className='DesktopContactButtonContainer'>                 
+                        <button type="submit" className='DesktopContactButton' data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        SEND ME A MESSAGE
+                        </button>
+                    </div>
+                 
+                    <p className='desktophearts'> &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp; ♥ &nbsp;&nbsp;</p>
                    
                         <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog">

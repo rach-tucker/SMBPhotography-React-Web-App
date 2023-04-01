@@ -7,9 +7,9 @@ export default function SeeMyWork () {
     return (
         <>
             <div className='SeeMyWorkContainer'>
-                <div className='MobileStickyContainer'>
+                <div className='StickyContainer'>
                 <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>
-                    <button className='MobileGalleryButton'>VIEW MY PORTFOLIO</button>
+                    <button className='GalleryButton'>VIEW MY PORTFOLIO</button>
                 </Link>
                 </div>
                 <div className="bg-image img1"></div>

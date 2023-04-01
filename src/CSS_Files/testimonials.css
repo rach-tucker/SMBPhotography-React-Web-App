@@ -2,14 +2,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 750px;
+    margin-top: 4rem;
     margin-bottom: 20px;
-    padding: 25px;
+    padding: 5rem;
     height:900px;
-    background-image: url("../Images/boho-8.jpg");
-    background-size:cover;
-    background-position: top;
+    background-image: url("../Images/feathers.jpg");
+    background-size:400%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
    
 .DesktopTestImage {
@@ -21,10 +22,9 @@
 .DesktopPraiseText {
     position:absolute;
     margin-bottom: 700px;
-    font-family: "Waterfall", sans-serif;
-    font-size: 8vw;
+    font-family: "lindsey-signature", sans-serif;
+    font-size: 5vw;
     font-weight: 500;
-    color: #057a75;
 }
 
 .DesktopTestText {

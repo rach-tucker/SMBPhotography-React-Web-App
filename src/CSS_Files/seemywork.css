@@ -27,7 +27,7 @@
   .img6 { background-image: url('../Images/scrollingbackground6.jpg'); }
   
 
-  .MobileStickyContainer {
+  .StickyContainer {
     position:sticky;
     top:1rem;
     position: -webkit-sticky;
@@ -38,7 +38,7 @@
     margin-bottom: 2rem;
   }
 
-  .MobileGalleryButton {
+  .GalleryButton {
     text-align: center;
     font-family:"Martel", serif;
     font-size: 2vh;
@@ -50,3 +50,36 @@
     height:80px;
 
   }
+
+@media (min-width: 1200px){
+  
+  .StickyContainer {
+    position:sticky;
+    top:1rem;
+    position: -webkit-sticky;
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .GalleryButton {
+    text-align: center;
+    font-family:"Martel", serif;
+    font-size: 2.5vh;
+    color:#fbf2e1;
+    background-color: #d09985;
+    opacity: .8;
+    border: none;
+    width: 280px;
+    height:90px;
+
+  }
+  .bg-image {
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -1,54 +1,96 @@
 .MobileLocationContainer {
-    background-image: url("../Images/boho-4.jpg");
-    background-position: top;
-    margin-top: 9rem;
-    padding-top: 4rem;
-    padding-bottom: 12rem;
+  background-image: url("../Images/boho-4.jpg");
+  background-position: top;
+  margin-top: 9rem;
+  padding-top: 4rem;
+  padding-bottom: 12rem;
 }
 
-  
-  .MobileLocationTitleContainer {
-    padding-top:0rem;
-  }
-  
-  .MobileLocationTitle {
-    font-family: "lindsey-signature", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    font-size: 6vh;
-    margin-top: 0;
-  }
-  
-  .MobileLocationText {
-    margin-left: 1rem;
-    margin-right: 3rem;
-    line-height: 2;
-    text-align: left;
-    margin-top: 1rem;
-    font-family:"Martel", serif;
-  }
 
-  .MobileAboutButtonContainer {
-    display: grid;
-    margin: auto;
-    width: 180px;
-    height:60px;
-    margin-top: 2rem;
-  }
-  
-  .MobileAboutButton{
-    font-family:"Martel", serif;
-    font-size: 2vh;
-    color:#fbf2e1;
-    background-color: #d09985;
-    opacity: .9;
-    border: none;
-  }
-  
-  .mobilehearts{
-    font-size: 6vh;
-    color:#d09985;
-    position: relative;
-    margin-top: 45px;
+.MobileLocationTitleContainer {
+  padding-top:0rem;
+}
+
+.MobileLocationTitle {
+  font-family: "lindsey-signature", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 6vh;
+  margin-top: 0;
+}
+
+.MobileLocationText {
+  margin-left: 1rem;
+  margin-right: 3rem;
+  line-height: 2;
+  text-align: left;
+  margin-top: 1rem;
+  font-family:"Martel", serif;
+}
+
+.MobileAboutButtonContainer {
+  display: grid;
+  margin: auto;
+  width: 180px;
+  height:60px;
+  margin-top: 2rem;
+}
+
+.MobileAboutButton{
+  font-family:"Martel", serif;
+  font-size: 2vh;
+  color:#fbf2e1;
+  background-color: #d09985;
+  opacity: .9;
+  border: none;
+}
+
+.mobilehearts{
+  font-size: 6vh;
+  color:#d09985;
+  position: relative;
+  margin-top: 45px;
+}
+
+.DesktopLocationContainer {
+background-image: url("../Images/boho-4-desktop.jpg");
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: 25rem;
+padding-top: 1rem;
+padding-bottom: 10rem;
+justify-content: center;
+}
+
+.DesktopLocationTitle {
+font-family: "lindsey-signature", serif;
+text-align: center;
+font-size: 10vh;
+margin-top: 2.5rem;
+}
+
+
+.DesktopLocationText {
+padding: 2rem;
+font-family:"Martel", serif;
+font-size: 1.5rem;
+line-height: 2;
+}
+
+.DesktopAboutButtonContainer {
+display: grid;
+margin: auto;
+width: 250px;
+height:90px;
+padding-top: 1rem;
+}
+
+.DesktopAboutButton {
+font-family:"Martel", serif;
+font-size: 2.5vh;
+color:#fbf2e1;
+background-color: #d09985;
+border: none;
 }

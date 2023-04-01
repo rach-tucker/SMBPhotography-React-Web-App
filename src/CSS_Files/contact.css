@@ -1,4 +1,4 @@
-.ContactPage {
+.MobileContactPage {
     padding-top: 0;
     background-image: url("../Images/feathers.jpg");
     background-attachment: fixed;
@@ -98,6 +98,86 @@ input {
 }
 
 .MobileContactBottomHearts {
+    font-size: 6vh;
+    color:#d09985;
+    position: relative;
+    padding-top: 3rem;
+}
+
+.DesktopContactPage {
+    padding-top: 1rem;
+    background-image: url("../Images/feathers.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-size: 280%;
+    padding-bottom: 2rem;
+}
+
+.DesktopContactButtonContainer {
+    display: grid;
+    margin: auto;
+    width: 280px;
+    height:100px;
+    padding-top: 1rem;
+}
+
+
+.DesktopContactButton {
+    font-family:"Martel", serif;
+    font-size: 2.5vh;
+    color:#fbf2e1;
+    background-color: #d09985;
+    border: none;
+}
+
+
+.DesktopContactMessage {
+    width:250px;
+    padding: 10px;
+    background-color: #fbf2e1;
+    opacity: .5;
+    border-color: none;
+    margin: 20px;
+}
+
+.DesktopContactText {
+ 
+    font-family:"Martel", sans-serif;
+    font-size: 3rem;
+    color:#3d7003;
+    padding-top: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.DesktopContactTextSmall{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: "Martel", sans-serif;
+    text-align: center;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    font-size: 1.5rem;
+}
+
+.DesktopCompanyText {
+    text-align: center;
+    font-family: "lindsey-signature", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    padding: 1rem;
+}
+
+.DesktopContactHearts {
+    font-size: 10vh;
+    color:#d09985;
+    position: relative;
+ 
+}
+
+.DesktopContactBottomHearts {
     font-size: 6vh;
     color:#d09985;
     position: relative;
