@@ -8,7 +8,7 @@ export default function SeeMyWork () {
         <>
             <div className='SeeMyWorkContainer'>
                 <div className='StickyContainer'>
-                <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>
+                <Link to="/portfolio" onClick={() => window.scrollTo(0, 0)}>
                     <button className='GalleryButton'>VIEW MY PORTFOLIO</button>
                 </Link>
                 </div>
